@@ -28,7 +28,6 @@ This README explains the directory structure, usage, and purpose of each file.
 
 ## Project Structure
 
-```text
 octree_mapping/
 │
 ├── data/                        # Input point cloud data (.pcd)
@@ -52,7 +51,6 @@ octree_mapping/
 ├── venv/                        # Python virtual environment
 │
 └── README.md                    # Documentation (this file)
-````
 
 -----
 
