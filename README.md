@@ -1,14 +1,3 @@
-Here is the corrected, pure Markdown version.
-
-**Changes made:**
-
-1.  **Fixed broken code blocks:** In your version, the opening backticks ` ``` ` were separated from the commands. I combined them so they render correctly on GitHub/VS Code.
-2.  **Added Syntax Highlighting:** I added `bash` to terminal commands and `text` to the file tree so GitHub colors them appropriately.
-3.  **Standardized Spacing:** Ensured consistent spacing between headers and lists.
-
-You can copy the block below directly into your `README.md` file.
-
-````markdown
 # Octree-Based 3D Occupancy Mapping
 ### Carnegie Mellon University — 16-362 Mobile Robot Programming Lab
 
@@ -28,6 +17,7 @@ This README explains the directory structure, usage, and purpose of each file.
 
 ## Project Structure
 
+```text
 octree_mapping/
 │
 ├── data/                        # Input point cloud data (.pcd)
@@ -51,6 +41,7 @@ octree_mapping/
 ├── venv/                        # Python virtual environment
 │
 └── README.md                    # Documentation (this file)
+````
 
 -----
 
