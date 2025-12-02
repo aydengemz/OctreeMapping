@@ -62,6 +62,23 @@ pip install open3d==0.17 matplotlib numpy
 
 *(Open3D GUI is disabled — only Matplotlib visualizations are used.)*
 
+### Environment Notes (Python & Open3D)
+
+> **Using a different Python version?**  
+> The project was built with Python 3.10, but Python 3.9–3.12 all work. If `python3.10` is unavailable, create the virtual env with whichever version you have (e.g., `python3 -m venv venv` or `python3.11 -m venv venv` on Homebrew).
+
+> **Can't install `open3d==0.17`?**  
+> Install the latest compatible wheel instead, e.g., `pip install open3d==0.19.0`. The code only relies on voxel grids and point-cloud I/O, which are unchanged in newer releases.
+
+- Activate the environment on macOS/Linux with `source venv/bin/activate`.
+- Verify everything inside the venv via:
+
+```bash
+python -c "import open3d; import numpy; import matplotlib"
+```
+
+No output means the dependencies loaded correctly.
+
 -----
 
 ## Running the Project
