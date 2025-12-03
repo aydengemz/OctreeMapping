@@ -1,6 +1,5 @@
-# visualize.py
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D  # noqa: F401
+from mpl_toolkits.mplot3d import Axes3D
 
 
 def collect_voxels(node, voxels):
@@ -34,7 +33,6 @@ def draw_octree(root):
         xs.append(center[0])
         ys.append(center[1])
         zs.append(center[2])
-        # size scaling factor for nicer plotting
         sizes.append(max(size, 1e-3) * 10.0)
 
     fig = plt.figure()

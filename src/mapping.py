@@ -1,3 +1,5 @@
+import os
+os.environ['OPEN3D_DISABLE_VISUALIZATION'] = '1'
 import open3d as o3d
 import numpy as np
 from octree import OctreeNode, insert_point

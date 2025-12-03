@@ -1,8 +1,8 @@
 import numpy as np
 import math
 
-L_OCC = math.log(0.7 / (1 - 0.7))   # positive log-odds for occupied
-L_FREE = math.log(0.4 / (1 - 0.4))  # negative log-odds for free
+L_OCC = math.log(0.7 / (1 - 0.7))
+L_FREE = math.log(0.4 / (1 - 0.4))
 CLAMP_MAX = 3.5
 CLAMP_MIN = -3.5
 

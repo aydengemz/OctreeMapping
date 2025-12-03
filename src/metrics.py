@@ -40,6 +40,23 @@ def bbox(points):
     return mins, maxs, size
 
 
+def estimate_octree_memory(root):
+    """
+    Estimate memory usage of octree in bytes.
+    Each node has:
+    - center: 3 floats (24 bytes)
+    - size: 1 float (8 bytes)
+    - log_odds: 1 float (8 bytes)
+    - is_leaf: 1 bool (1 byte, but Python objects have overhead)
+    - children: 8 pointers (64 bytes on 64-bit system)
+    - Python object overhead: ~56 bytes
+    
+    Rough estimate: ~200 bytes per node
+    """
+    n_nodes = count_octree_nodes(root)
+    return n_nodes * 200
+
+
 def print_metrics(name, t_start, t_end, **kwargs):
     print("\n========== {} METRICS ==========".format(name))
     print("Runtime: {:.6f} sec".format(t_end - t_start))
